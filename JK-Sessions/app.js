@@ -61,15 +61,24 @@
 
 //objects
 
-let obj = {
-  name: "Akbar",
-  age: 36,
-  address: "Clifton"
-};
-console.log(obj);
+// let obj = {
+//   name: "Akbar",
+//   age: 36,
+//   address: "Clifton"
+// };
+// console.log(obj);
 
-obj.city = "Karachi"; //adding values in the object
-console.log(obj);
+// obj.city = "Karachi"; //adding values in the object
+// console.log(obj);
 
-delete obj.address;  // deleting values from the object
-console.log(obj);
+// delete obj.address;  // deleting values from the object
+// console.log(obj);
+
+
+
+let arr = ["Akbar",{
+  name:'Akbar',
+  city:"karachi"
+},35,true];
+
+console.log(arr[1].city);
