@@ -57,12 +57,19 @@
 //     }
 //   }
   
-//   countNotes(120259); 
+//   countNotes(5320); 
 
+//objects
 
-var num = +prompt("Enter your number: ");
-if(num %2 === 0){
-    alert("Even number");
-}else{
-    alert("odd number");
-}
+let obj = {
+  name: "Akbar",
+  age: 36,
+  address: "Clifton"
+};
+console.log(obj);
+
+obj.city = "Karachi"; //adding values in the object
+console.log(obj);
+
+delete obj.address;  // deleting values from the object
+console.log(obj);
