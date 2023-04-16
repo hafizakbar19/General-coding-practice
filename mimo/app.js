@@ -28,7 +28,7 @@
 
 
 // filter() method
-const testScores = [90, 50, 100, 25, 81, 66, 80];
+// const testScores = [90, 50, 100, 25, 81, 66, 80];
 // const a = [];
 // for (const element of testScores){
 //     if(element >= 90){
@@ -46,8 +46,20 @@ const testScores = [90, 50, 100, 25, 81, 66, 80];
 // arr.push(b);
 // console.log(arr);
 
-const participants = ["John", "Paul", "George", "Ringo", "Pete", "Stuart", "Mick"];
-const sNames = participants.filter((element)=>{
-    return element[0] === "S";
-}); // filter() method is used to filter out the elements from the array.
-console.log(sNames);
+// const participants = ["John", "Paul", "George", "Ringo", "Pete", "Stuart", "Mick"];
+// const sNames = participants.filter((element)=>{
+//     return element[0] === "S";
+// }); // filter() method is used to filter out the elements from the array.
+// console.log(sNames);
+
+// .reduce() method
+
+const miles = [33,95,79];
+// let total = 0;
+// for ( const element of miles){
+// total += element;
+// };
+// console.log(total);
+
+const total = miles.reduce((prev,curr)=>prev+curr);
+console.log(total);
