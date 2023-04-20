@@ -53,14 +53,15 @@
 //classes
 
 class Human {
-    constructor(name,nationality,age){
-        this.name = name,
-        this.nationality = nationality,
-        this.age = age
+    constructor(lang,ethnicity,hairColor){
+        this.lang = lang,
+        this.ethnicity= ethnicity,
+        this.hairColor = hairColor
 
     }
 }
 
-const american = new Human("John","American",45);
+const american = new Human("English","White","Grey/brown");
+const indian = new Human("Hindi","Brown/indian","Black");
 
-console.log(american);
+console.log(american.lang, indian.lang);
