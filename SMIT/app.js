@@ -48,3 +48,19 @@
 // }else{
 //     alert("You lost! the number is: "+ num);
 // }
+
+
+//classes
+
+class Human {
+    constructor(name,nationality,age){
+        this.name = name,
+        this.nationality = nationality,
+        this.age = age
+
+    }
+}
+
+const american = new Human("John","American",45);
+
+console.log(american);
