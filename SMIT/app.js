@@ -63,5 +63,6 @@ class Human {
 
 const american = new Human("English","White","Grey/brown");
 const indian = new Human("Hindi","Brown/indian","Black");
+const pakistani = new Human("urdu","Brown/indian","Black");
 
 console.log(american.lang, indian.lang);
