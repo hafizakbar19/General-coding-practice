@@ -52,17 +52,30 @@
 
 //classes
 
-class Human {
-    constructor(lang,ethnicity,hairColor){
-        this.lang = lang,
-        this.ethnicity= ethnicity,
-        this.hairColor = hairColor
+// class Human {
+//     constructor(lang,ethnicity,hairColor){
+//         this.lang = lang,
+//         this.ethnicity= ethnicity,
+//         this.hairColor = hairColor
 
-    }
-}
+//     }
+// }
 
-const american = new Human("English","White","Grey/brown");
-const indian = new Human("Hindi","Brown/indian","Black");
-const pakistani = new Human("urdu","Brown/indian","Black");
+// const american = new Human("English","White","Grey/brown");
+// const indian = new Human("Hindi","Brown/indian","Black");
+// const pakistani = new Human("urdu","Brown/indian","Black");
 
-console.log(american.lang, pakistani.lang);
+// console.log(american.lang, pakistani.lang);
+
+class Phone{
+    constructor(brand,model,ram,memory){
+        this.brand = brand,
+        this.model = model,
+        this.ram = ram,
+        this.memory = memory
+    }; 
+};
+
+let myPhone1 = new Phone("Samsung","A32",6,128);
+
+console.log(myPhone1.model);
