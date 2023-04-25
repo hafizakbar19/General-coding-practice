@@ -54,12 +54,15 @@
 
 // .reduce() method
 
-const miles = [33,95,79];
-// let total = 0;
-// for ( const element of miles){
-// total += element;
-// };
+// const miles = [33,95,79];
+// // let total = 0;
+// // for ( const element of miles){
+// // total += element;
+// // };
+// // console.log(total);
+
+// const total = miles.reduce((prev,curr)=>prev+curr);
 // console.log(total);
 
-const total = miles.reduce((prev,curr)=>prev+curr);
-console.log(total);
+document.querySelector('h1').innerHTML="Hello";
+document.querySelector("").innerHTML="hello this is the paragracph selected by querry selector"
