@@ -67,15 +67,31 @@
 
 // console.log(american.lang, pakistani.lang);
 
-class Phone{
-    constructor(brand,model,ram,memory){
-        this.brand = brand,
-        this.model = model,
-        this.ram = ram,
-        this.memory = memory
-    }; 
+// class Phone{
+//     constructor(brand,model,ram,memory){
+//         this.brand = brand,
+//         this.model = model,
+//         this.ram = ram,
+//         this.memory = memory
+//     }; 
+// };
+
+// let myPhone1 = new Phone("Samsung","A32",6,128);
+
+// console.log(myPhone1.model);
+
+//  var cityToCheck = prompt("Enter your city");
+//  cityToCheck = cityToCheck.toLowerCase();
+//  var cleanestCities = ["cheyenne", "santa fe", "tucson", "great falls", "honolulu"];
+//  for (var i = 0; i <= 4; i++) {
+//  if (cityToCheck === cleanestCities[i]) {
+//  alert("It's one of the cleanest cities");
+//  }
+//  }
+
+let month = prompt("Enter month name");
+let ans = month.length;
+if (ans > 3){
+    alert(ans.slice(0,3));   
 };
 
-let myPhone1 = new Phone("Samsung","A32",6,128);
-
-console.log(myPhone1.model);
