@@ -89,9 +89,11 @@
 //  }
 //  }
 
-let month = prompt("Enter month name");
+let month = "November";
 let ans = month.length;
 if (ans > 3){
-    alert(ans.slice(0,3));   
+    ans = month.slice(0,3);
+      
 };
 
+console.log(ans); 
