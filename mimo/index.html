@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mimo practice</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -24,6 +25,22 @@
             commodi magnam dolorem iusto ipsa numquam!</p>
         <p id="myid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab quo similique deserunt rem
             ipsam beatae, exercitationem ad sunt autem!</p>
+
+        <div class="calculator">
+            <h3>Calculator</h3>
+            <label for="num1">1st number</label><br>
+            <input type="number" name="num1" id="num1"><br>
+            <label for="num2">second number</label><br>
+            <input type="number" name="num2" id="num2"><br>
+            <label for="operation">sign (+ , - , * or /) </label><br>
+            <input type="text" name="operation" id="operation"><br>
+            <button onclick="calc()"> Check result</button>
+            <h3>result = </h3>
+            <div id="result">
+            
+            </div>
+        </div>
+        
 
     </main>
     <footer>
