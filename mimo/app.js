@@ -67,23 +67,40 @@
 // document.querySelector('h1').innerHTML="Hello";
 // document.querySelector("p").innerHTML="hello this is the paragracph selected by querry selector"
 
-let calc = ()=>{
-    let num1 = parseInt(document.getElementById('num1').value);
-    let num2 = parseInt(document.getElementById('num2').value);
-    let operation = document.getElementById('operation').value;
+// let calc = ()=>{
+//     let num1 = parseInt(document.getElementById('num1').value);
+//     let num2 = parseInt(document.getElementById('num2').value);
+//     let operation = document.getElementById('operation').value;
 
-    if(operation == "+"){
-        document.getElementById('result').innerHTML= num1 + num2;
-    }
-    else if(operation == "-"){
-        document.getElementById('result').innerHTML= num1 - num2;
-    }
-    else if(operation == "*"){
-        document.getElementById('result').innerHTML= num1 * num2;
-    }
-    else if(operation == "/"){
-        document.getElementById('result').innerHTML= num1 / num2;
-    }else{
-        document.getElementById('result').innerHTML= "Enter a valid operation sign"
-    }
-}
+//     if(operation == "+"){
+//         document.getElementById('result').innerHTML= num1 + num2;
+//     }
+//     else if(operation == "-"){
+//         document.getElementById('result').innerHTML= num1 - num2;
+//     }
+//     else if(operation == "*"){
+//         document.getElementById('result').innerHTML= num1 * num2;
+//     }
+//     else if(operation == "/"){
+//         document.getElementById('result').innerHTML= num1 / num2;
+//     }else{
+//         document.getElementById('result').innerHTML= "Enter a valid operation sign"
+//     }
+// }
+
+// ternary operator
+
+// let age;
+// let isAdult = (age <18) ? "young":"mature";
+
+// console.log(isAdult);
+
+// //discount of 15%
+
+// let bill = 1800;
+// bill = (bill > 1500) ? bill * 0.85: bill;
+// console.log(bill);
+
+let hour = 14;
+hour = (hour > 12) ? "pm" : "am";
+console.log(hour);
