@@ -105,8 +105,9 @@
 // hour = (hour > 12) ? "pm" : "am";
 // console.log(hour);
 
-let toggle = () => {
-    let el = document.querySelector('p');
-    el.classList.toggle("bold");
-    el.classList.toggle('second');
-}
+// let toggle = () => {
+//     let el = document.querySelector('p');
+//     el.classList.toggle("bold");
+//     el.classList.toggle('second');
+// }
+
