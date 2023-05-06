@@ -89,11 +89,30 @@
 //  }
 //  }
 
-let month = "November";
-let ans = month.length;
-if (ans > 3){
-    ans = month.slice(0,3);
+// let month = "November";
+// let ans = month.length;
+// if (ans > 3){
+//     ans = month.slice(0,3);
       
+// };
+
+// console.log(ans); 
+
+
+// let today = new Date();
+
+// let dDay = new Date("June 30, 2035");
+
+// let dif = dDay - today;
+// dif = dif / (1000*60*60*24);
+// console.log(dif)
+
+function tellTime(){
+    let now = new Date();
+    let hr = now.getHours();
+    let min = now.getMinutes();
+    let sec = now.getSeconds();
+    console.log(`The time is ${hr} : ${min} : ${sec}`);
 };
 
-console.log(ans); 
+tellTime()
