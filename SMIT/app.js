@@ -107,12 +107,16 @@
 // dif = dif / (1000*60*60*24);
 // console.log(dif)
 
-function tellTime(){
-    let now = new Date();
-    let hr = now.getHours();
-    let min = now.getMinutes();
-    let sec = now.getSeconds();
-    console.log(`The time is ${hr} : ${min} : ${sec}`);
-};
+// function tellTime(){
+//     let now = new Date();
+//     let hr = now.getHours();
+//     let min = now.getMinutes();
+//     let sec = now.getSeconds();
+//     console.log(`The time is ${hr} : ${min} : ${sec}`);
+// };
 
-tellTime()
+// tellTime()
+
+let e = document.childNodes[0].childNodes[0];
+
+console.log(e);
