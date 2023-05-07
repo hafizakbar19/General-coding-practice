@@ -117,6 +117,10 @@
 
 // tellTime()
 
-let e = document.childNodes[0].childNodes[0];
+// let e = document.childNodes[0].childNodes[0];
 
-console.log(e);
+// console.log(e);
+
+export function tellTime(){
+    console.log(new Date());
+};
