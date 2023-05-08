@@ -111,3 +111,12 @@
 //     el.classList.toggle('second');
 // }
 
+function human(name,age,nationality){
+    this.name = name,
+    this.age = age,
+    this.nationality = nationality
+};
+var human2 = new human ("Akbar",35,"Pakistani");
+var human3 = new human ("Noor",38,"Indian");
+
+console.log(human2,human3)
