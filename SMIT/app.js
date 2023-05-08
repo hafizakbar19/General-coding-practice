@@ -121,6 +121,14 @@
 
 // console.log(e);
 
-export function tellTime(){
-    console.log(new Date());
+// export function tellTime(){
+//     console.log(new Date());
+// };
+
+
+var x = 10;
+function print (){
+    console.log(x);
+    var x = 20;
 };
+print();
