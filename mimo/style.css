@@ -12,3 +12,12 @@
 .second {
     color: green;
 }
+.item {
+    background-color: skyblue;
+    height: 100px;
+    width: 200px;
+}
+
+.pink {
+    background-color: pink;
+}

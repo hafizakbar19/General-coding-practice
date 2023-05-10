@@ -121,9 +121,21 @@
 
 // console.log(human2,human3)
 
-try {
-    (5).toUpperCase();
-}
-catch (e){
-    console.log(e);
-}
+// try {
+//     (5).toUpperCase();
+// }
+// catch (e){
+//     console.log(e);
+// }
+
+let el = document.querySelector(".item");
+let change = () => {
+    el.classList.toggle("pink");
+};
+el.ondblclick = change;
+
+let changeOnscroll = () => {
+    document.querySelector("body").style.backgroundColor = "red";
+};
+
+document.querySelector("body").onscroll = changeOnscroll;
