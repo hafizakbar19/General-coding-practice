@@ -133,13 +133,26 @@
 // };
 // print();
 
-let company = {
-    head: "Lal",
-    secretary: "Hasan",
-    supervisor: "Akbar",
-    name: "Sapphire",
-    haseGenSet: true
+// let company = {
+//     head: "Lal",
+//     secretary: "Hasan",
+//     supervisor: "Akbar",
+//     name: "Sapphire",
+//     haseGenSet: true
+// };
+
+// let sup = "head" in company; // to check if a propery exist in the object. property in metioned in "" and then in and then obj name
+// console.log(sup);
+
+function Building(name,aptNos,maint,water){
+    this.name = name,
+    this.aptNos = aptNos,
+    this.maint = maint,
+    this.water = water
 };
 
-let sup = "head" in company; // to check if a propery exist in the object. property in metioned in "" and then in and then obj name
-console.log(sup);
+let b1 = new Building("Sapphire",27,27000,"Tanker");
+let b2 = new Building("Ayesha Tower",36,25000,"Tanker");
+let b3 = new Building("Royal Elite",52,25000,"Tanker /line");
+
+console.log(b2.name);
