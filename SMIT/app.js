@@ -150,9 +150,16 @@ function Building(name,aptNos,maint,water){
     this.maint = maint,
     this.water = water
 };
+Building.prototype.condition = function(){  //the prototype adds the function (metod in all of its objects)
+    if (this.maint < 25000){
+        console.log('cheaper')
+    }else{
+        console.log('expensive')
+    }
+};
 
 let b1 = new Building("Sapphire",27,27000,"Tanker");
 let b2 = new Building("Ayesha Tower",36,25000,"Tanker");
 let b3 = new Building("Royal Elite",52,25000,"Tanker /line");
 
-console.log(b2.name);
+console.log(b3.condition);
