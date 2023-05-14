@@ -133,3 +133,13 @@
 // };
 // print();
 
+let company = {
+    head: "Lal",
+    secretary: "Hasan",
+    supervisor: "Akbar",
+    name: "Sapphire",
+    haseGenSet: true
+};
+
+let sup = "head" in company; // to check if a propery exist in the object. property in metioned in "" and then in and then obj name
+console.log(sup);
