@@ -142,8 +142,28 @@ let calc = ()=>{
 
 //asyncronous JS in setTimeout and setInterval callback functions.
 
-console.log('Exucuted First');
-setTimeout(() => {
-    console.log('Executed Last');
-}, 2000);
-console.log('Executed Second');
+// console.log('Exucuted First');
+// setTimeout(() => {
+//     console.log('Executed Last');
+// }, 2000);
+// console.log('Executed Second');
+
+// let callback = () => {
+//     console.log('Exuted last due to setTimeout')
+// };
+
+// console.log('Excuted First');
+// setTimeout(callback,1000);
+// console.log('Executed Second');
+
+let countdown = 3;
+const countdownInterval = setInterval(()=>{
+    if (countdown > 0){
+        console.log(countdown);
+    }
+    countdown --;
+    if (countdown < 0){
+        clearInterval(countdownInterval);
+        console.log("Go")
+    }
+}, 1000);
