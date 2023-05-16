@@ -128,14 +128,22 @@ let calc = ()=>{
 //     console.log(e);
 // }
 
-let el = document.querySelector(".item");
-let change = () => {
-    el.classList.toggle("pink");
-};
-el.ondblclick = change;
+// let el = document.querySelector(".item");
+// let change = () => {
+//     el.classList.toggle("pink");
+// };
+// el.ondblclick = change;
 
-let changeOnscroll = () => {
-    document.querySelector("body").style.backgroundColor = "red";
-};
+// let changeOnscroll = () => {
+//     document.querySelector("body").style.backgroundColor = "red";
+// };
 
-document.querySelector("body").onscroll = changeOnscroll;
+// document.querySelector("body").onscroll = changeOnscroll;
+
+//asyncronous JS in setTimeout and setInterval callback functions.
+
+console.log('Exucuted First');
+setTimeout(() => {
+    console.log('Executed Last');
+}, 2000);
+console.log('Executed Second');
