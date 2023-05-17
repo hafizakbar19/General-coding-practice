@@ -177,7 +177,7 @@ const dessertStock = {
 };
 
 // function orderCheesecake(){
-//     return new Promise(fucntion(resolve,reject)
+//     return new Promise(fuction(resolve,reject)
 //         {
 //             if (dessertStock.cheeseCake > 0)
 //             {
@@ -192,17 +192,37 @@ const dessertStock = {
 // console.log(orderCheesecake);
 
 
+// function orderCheesecake() {
+//     return new Promise(function(resolve, reject) {
+//       if (dessertStock.cheeseCake > 0) {
+//         resolve("Cheese cake is available in the stock");
+//       } else {
+//         reject("Sorry, cheesecake is sold out");
+//       }
+//     });
+//   }
+  
+//   const makeOrder = orderCheesecake();
+  
+//   console.log(makeOrder);
+
+
+
 function orderCheesecake() {
     return new Promise(function(resolve, reject) {
-      if (dessertStock.cheeseCake > 0) {
-        resolve("Cheese cake is available in the stock");
-      } else {
-        reject("Sorry, cheesecake is sold out");
-      }
+        if (dessertStock.cheeseCake > 0) {
+            resolve("Cheesecake is available in the stock");
+        } else {
+            reject("Sorry, cheesecake is sold out");
+        }
     });
-  }
-  
-  const makeOrder = orderCheesecake();
-  
-  console.log(makeOrder);
+}
+
+const makeOrder = orderCheesecake();
+makeOrder.then(function(result) {
+    console.log(result);
+}).catch(function(error) {
+    console.log(error);
+});
+
   
