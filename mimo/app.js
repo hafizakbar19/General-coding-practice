@@ -176,17 +176,33 @@ const dessertStock = {
     cheeseCake: 0
 };
 
-function orderCheesecake(){
-    return new Promise(fucntion(resolve,reject)
-        {
-            if (dessertStock.cheeseCake > 0)
-            {
-            resolve("Cheese cake is available in the stock");
-        }else{
-            reject("sorry Cheese cake is sold out");
-        }
+// function orderCheesecake(){
+//     return new Promise(fucntion(resolve,reject)
+//         {
+//             if (dessertStock.cheeseCake > 0)
+//             {
+//             resolve("Cheese cake is available in the stock");
+//         }else{
+//             reject("sorry Cheese cake is sold out");
+//         }
 
+//     });
+// };
+// const makeOrder = orderCheesecake();
+// console.log(orderCheesecake);
+
+
+function orderCheesecake() {
+    return new Promise(function(resolve, reject) {
+      if (dessertStock.cheeseCake > 0) {
+        resolve("Cheese cake is available in the stock");
+      } else {
+        reject("Sorry, cheesecake is sold out");
+      }
     });
-};
-const makeOrder = orderCheesecake();
-console.log(orderCheesecake);
+  }
+  
+  const makeOrder = orderCheesecake();
+  
+  console.log(makeOrder);
+  
