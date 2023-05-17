@@ -156,14 +156,37 @@ let calc = ()=>{
 // setTimeout(callback,1000);
 // console.log('Executed Second');
 
-let countdown = 3;
-const countdownInterval = setInterval(()=>{
-    if (countdown > 0){
-        console.log(countdown);
-    }
-    countdown --;
-    if (countdown < 0){
-        clearInterval(countdownInterval);
-        console.log("Go")
-    }
-}, 1000);
+// let countdown = 3;
+// const countdownInterval = setInterval(()=>{
+//     if (countdown > 0){
+//         console.log(countdown);
+//     }
+//     countdown --;
+//     if (countdown < 0){
+//         clearInterval(countdownInterval);
+//         console.log("Go")
+//     }
+// }, 1000);
+
+//promise
+
+const dessertStock = {
+    cheeseCake: 10,
+    moltenCake: 7,
+    cheeseCake: 0
+};
+
+function orderCheesecake(){
+    return new Promise(fucntion(resolve,reject)
+        {
+            if (dessertStock.cheeseCake > 0)
+            {
+            resolve("Cheese cake is available in the stock");
+        }else{
+            reject("sorry Cheese cake is sold out");
+        }
+
+    });
+};
+const makeOrder = orderCheesecake();
+console.log(orderCheesecake);
