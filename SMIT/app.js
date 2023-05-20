@@ -144,12 +144,12 @@
 // let sup = "head" in company; // to check if a propery exist in the object. property in metioned in "" and then in and then obj name
 // console.log(sup);
 
-function Building(name,aptNos,maint,water){
-    this.name = name,
-    this.aptNos = aptNos,
-    this.maint = maint,
-    this.water = water
-};
+// function Building(name,aptNos,maint,water){
+//     this.name = name,
+//     this.aptNos = aptNos,
+//     this.maint = maint,
+//     this.water = water
+// };
 // Building.prototype.condition = function(){  //the prototype adds the function (metod in all of its objects)
 //     if (this.maint < 25000){
 //         console.log('cheaper')
@@ -163,4 +163,16 @@ function Building(name,aptNos,maint,water){
 // let b3 = new Building("Royal Elite",52,25000,"Tanker /line");
 
 // console.log(b3.condition);
+
+function printArray (a){
+    var len = a.length;
+    i = 0;
+    if (len == 0){
+        console.log("Epmty Array");
+    }else{
+        do{
+            console.log(a[i]);
+        }while(++i < len);
+    }
+};
 
