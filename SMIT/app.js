@@ -164,15 +164,29 @@
 
 // console.log(b3.condition);
 
-function printArray (a){
-    var len = a.length;
-    i = 0;
-    if (len == 0){
-        console.log("Epmty Array");
-    }else{
-        do{
-            console.log(a[i]);
-        }while(++i < len);
-    }
-};
+// function printArray (a){
+//     var len = a.length;
+//     i = 0;
+//     if (len == 0){
+//         console.log("Epmty Array");
+//     }else{
+//         do{
+//             console.log(a[i]);
+//         }while(++i < len);
+//     }
+// };
+
+// console.log(typeof(printArray))
+
+const evens = [2,4,6,8];
+
+// const odds = evens.map(val => val +1);
+
+// console.log(odds);
+
+evens.forEach(v => {
+    if (v % 5 === 0)
+        fives.push(v)
+ })
+ console.log(evens);
 
