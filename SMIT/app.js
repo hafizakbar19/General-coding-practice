@@ -178,15 +178,16 @@
 
 // console.log(typeof(printArray))
 
-const evens = [2,4,6,8];
+// const evens = [2,4,6,8];
 
 // const odds = evens.map(val => val +1);
 
 // console.log(odds);
 
-evens.forEach(v => {
-    if (v % 5 === 0)
-        fives.push(v)
- })
- console.log(evens);
+// evens.forEach(v => {
+//     if (v % 5 === 0)
+//         fives.push(v)
+//  })
+//  console.log(evens);
+
 
