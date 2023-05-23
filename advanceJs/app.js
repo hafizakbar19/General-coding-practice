@@ -56,15 +56,30 @@
 
 //destructuring objects
 
-let obj ={
-    name: "Akbar",
-    age: 35,
-    city: "Karachi"
-};
+// let obj ={
+//     name: "Akbar",
+//     age: 35,
+//     city: "Karachi"
+// };
 
-let {name : n, age:a, city:c} = obj; //alias
+// let {name : n, age:a, city:c} = obj; //alias
 
-console.log(n);
-console.log(a);
-console.log(c);
+// console.log(n);
+// console.log(a);
+// console.log(c);
 
+//classes 
+
+class hello{
+    message(){
+        console.log("Hello");
+    }
+    sorry(){
+        console.log("sorry")
+    }
+}
+
+let a = new hello;
+
+a.message();
+a.sorry()
