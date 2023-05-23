@@ -208,21 +208,45 @@ const dessertStock = {
 
 
 
-function orderCheesecake() {
-    return new Promise(function(resolve, reject) {
-        if (dessertStock.cheeseCake > 0) {
-            resolve("Cheesecake is available in the stock");
-        } else {
-            reject("Sorry, cheesecake is sold out");
+// function orderCheesecake() {
+//     return new Promise(function(resolve, reject) {
+//         if (dessertStock.cheeseCake > 0) {
+//             resolve("Cheesecake is available in the stock");
+//         } else {
+//             reject("Sorry, cheesecake is sold out");
+//         }
+//     });
+// }
+
+// const makeOrder = orderCheesecake();
+// makeOrder.then(function(result) {
+//     console.log(result);
+// }).catch(function(error) {
+//     console.log(error);
+// });
+
+
+//classes
+
+class Animal{
+    constructor(name,species,feed){
+        this.name =name,
+        this.species = species,
+        this.feed = feed
+        
+    }
+    eat(food){
+        if(food == "treat"){
+            console.log('Good food')
+        }else{
+            console.log("not good")
         }
-    });
+    }
 }
 
-const makeOrder = orderCheesecake();
-makeOrder.then(function(result) {
-    console.log(result);
-}).catch(function(error) {
-    console.log(error);
-});
+const animal1 = new Animal('cat','pet','meat');
+const animal2 = new Animal('cow','grass');
+
+animal2.eat("treat");
 
   
