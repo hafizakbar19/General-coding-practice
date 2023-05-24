@@ -170,11 +170,11 @@ let calc = ()=>{
 
 //promise
 
-const dessertStock = {
-    cheeseCake: 10,
-    moltenCake: 7,
-    cheeseCake: 0
-};
+// const dessertStock = {
+//     cheeseCake: 10,
+//     moltenCake: 7,
+//     cheeseCake: 0
+// };
 
 // function orderCheesecake(){
 //     return new Promise(fuction(resolve,reject)
@@ -248,5 +248,7 @@ const animal1 = new Animal('cat','pet','meat');
 const animal2 = new Animal('cow','grass');
 
 animal2.eat("treat");
+
+
 
   
