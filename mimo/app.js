@@ -250,5 +250,29 @@ const animal2 = new Animal('cow','grass');
 animal2.eat("treat");
 
 
+//inheritance in classes
+
+class Dog extends Animal{
+    bark(){
+        console.log('woof woof');
+    }
+};
+const dog1 = new Dog('pug','pet','padigree');
+const dog2 = new Dog('german shephard','pet','home food');
+console.log(dog1,dog2);
+dog1.bark();
+
+class Bird extends Animal{
+    fly(){
+        console.log('flying');
+    }
+}
+
+const bird1 = new Bird('parrot','pet','seeds');
+bird1.bark();
+
+
+
+
 
   
