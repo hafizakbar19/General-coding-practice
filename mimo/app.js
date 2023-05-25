@@ -228,48 +228,77 @@ let calc = ()=>{
 
 //classes
 
-class Animal{
-    constructor(name,species,feed){
-        this.name =name,
-        this.species = species,
-        this.feed = feed
+// class Animal{
+//     constructor(name,species,feed){
+//         this.name =name,
+//         this.species = species,
+//         this.feed = feed
         
+//     }
+//     eat(food){
+//         if(food == "treat"){
+//             console.log('Good food')
+//         }else{
+//             console.log("not good")
+//         }
+//     }
+// }
+
+// const animal1 = new Animal('cat','pet','meat');
+// const animal2 = new Animal('cow','grass');
+
+// animal2.eat("treat");
+
+
+// //inheritance in classes
+
+// class Dog extends Animal{
+//     bark(){
+//         console.log('woof woof');
+//     }
+// };
+// const dog1 = new Dog('pug','pet','padigree');
+// const dog2 = new Dog('german shephard','pet','home food');
+// console.log(dog1,dog2);
+// dog1.bark();
+
+// class Bird extends Animal{
+//     fly(){
+//         console.log('flying');
+//     }
+// }
+
+// const bird1 = new Bird('parrot','pet','seeds');
+// bird1.bark();
+
+class Human {
+    constructor(weapon){
+        this.weapon = weapon;
+        this.life = 100;
     }
-    eat(food){
-        if(food == "treat"){
-            console.log('Good food')
-        }else{
-            console.log("not good")
-        }
+    recieveHit(){
+        this.life = this.life - 10;
     }
 }
 
-const animal1 = new Animal('cat','pet','meat');
-const animal2 = new Animal('cow','grass');
-
-animal2.eat("treat");
-
-
-//inheritance in classes
-
-class Dog extends Animal{
-    bark(){
-        console.log('woof woof');
+class Ninja extends Human{
+    recieveHit(){
+        super.recieveHit(); //it performs action of the parent first and then child's additionally(outputs 85)
+        this.life = this.life - 5;
     }
 };
-const dog1 = new Dog('pug','pet','padigree');
-const dog2 = new Dog('german shephard','pet','home food');
-console.log(dog1,dog2);
-dog1.bark();
+const ninja1 = new Ninja('shuriken');
 
-class Bird extends Animal{
-    fly(){
-        console.log('flying');
-    }
-}
+console.log(ninja1.life);
+ninja1.recieveHit();
+console.log(ninja1.life);
 
-const bird1 = new Bird('parrot','pet','seeds');
-bird1.bark();
+const human1 = new Human('sword');
+console.log(human1.life);
+human1.recieveHit();
+console.log(human1.life);
+
+
 
 
 
