@@ -191,3 +191,14 @@
 //  console.log(evens);
 
 
+//objects in es6
+
+let a = 0; let b = 1;
+
+let obj = {
+    a,b,
+    add: (c,d) => c +d
+};
+
+console.log(obj.a);
+console.log(obj.add(3,5))
