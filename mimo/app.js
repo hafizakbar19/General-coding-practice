@@ -271,32 +271,35 @@ let calc = ()=>{
 // const bird1 = new Bird('parrot','pet','seeds');
 // bird1.bark();
 
-class Human {
-    constructor(weapon){
-        this.weapon = weapon;
-        this.life = 100;
-    }
-    recieveHit(){
-        this.life = this.life - 10;
-    }
-}
+// class Human {
+//     constructor(weapon){
+//         this.weapon = weapon;
+//         this.life = 100;
+//     }
+//     recieveHit(){
+//         this.life = this.life - 10;
+//     }
+// }
 
-class Ninja extends Human{
-    recieveHit(){
-        super.recieveHit(); //it performs action of the parent first and then child's additionally(outputs 85)
-        this.life = this.life - 5;
-    }
-};
-const ninja1 = new Ninja('shuriken');
+// class Ninja extends Human{
+//     recieveHit(){
+//         super.recieveHit(); //it performs action of the parent first and then child's additionally(outputs 85)
+//         this.life = this.life - 5;
+//     }
+// };
+// const ninja1 = new Ninja('shuriken');
 
-console.log(ninja1.life);
-ninja1.recieveHit();
-console.log(ninja1.life);
+// console.log(ninja1.life);
+// ninja1.recieveHit();
+// console.log(ninja1.life);
 
-const human1 = new Human('sword');
-console.log(human1.life);
-human1.recieveHit();
-console.log(human1.life);
+// const human1 = new Human('sword');
+// console.log(human1.life);
+// human1.recieveHit();
+// console.log(human1.life);
+
+//modules
+
 
 
 
