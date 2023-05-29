@@ -208,6 +208,10 @@
 
 arr = new Array(1,2,3,6,5,4,7);
 
-let [a,b,c,...rest] = arr;
+let [a,b,c] = arr;
 
-console.log(f)
+console.log(c)
+
+obj= new Object({fname:"Akbar",age: 35, city: "Karachi"});
+
+console.log(obj.fname)
