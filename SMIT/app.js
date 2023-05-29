@@ -193,12 +193,21 @@
 
 //objects in es6
 
-let a = 0; let b = 1;
+// let a = 0; let b = 1;
 
-let obj = {
-    a,b,
-    add: (c,d) => c +d
-};
+// let obj = {
+//     a,b,
+//     add: (c,d) => c +d
+// };
 
-console.log(obj.a);
-console.log(obj.add(3,5))
+// console.log(obj.a);
+// console.log(obj.add(3,5))
+
+//destructuring
+
+
+arr = new Array(1,2,3,6,5,4,7);
+
+let [a,b,c,...rest] = arr;
+
+console.log(f)
